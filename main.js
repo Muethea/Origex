@@ -23,12 +23,12 @@ for (const link of links) {
 const header = document.querySelector('#header')
 
 const navHeight = header.offsetHeight
-window.addEventListener('scroll',function(){
-  if(window.scrollY >= navHeight){
-
+window.addEventListener('scroll', function () {
+  if (window.scrollY >= navHeight) {
     header.classList.add('scroll')
-
-  }else{
+  } else {
     header.classList.remove('scroll')
   }
 })
+
+/*SWIPER*/

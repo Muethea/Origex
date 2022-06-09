@@ -16,6 +16,10 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>OrigenX</title>
   </head>
@@ -31,7 +35,7 @@
             <li><a class="title" href="#home">Inicio</a></li>
             <li><a class="title" href="#about">Sobre</a></li>
             <li><a class="title" href="#services">Servicos</a></li>
-            <li><a class="title" href="#testimoniasls">Depoimentos</a></li>
+            <li><a class="title" href="#testimonials">Depoimentos</a></li>
             <li><a class="title" href="#contact">Contato</a></li>
           </ul>
         </div>
@@ -141,7 +145,74 @@
           </div>
         </div>
       </section>
+
+      <div class="divider-1"></div>
+      <section class="section" id="testimonials">
+        <div class="container grid">
+          <header>
+            <h2 class="title">Depoimentos de quem já passou por aqui</h2>
+          </header>
+          <div class="testimonials swiper-container">
+            <div class="swiper-wrapper">
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Possimus, aspernatur aliquam dolorum iste quas illum ipsa
+                    impedit
+                  </p>
+                  <cite>
+                    <img
+                      src="https://avatars.githubusercontent.com/u/64161845?v=4"
+                      alt=""
+                    />
+                    Fernando dos Santos
+                  </cite>
+                </blockquote>
+              </div>
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Possimus, aspernatur aliquam dolorum iste quas illum ipsa
+                    impedit
+                  </p>
+                  <cite>
+                    <img
+                      src="https://avatars.githubusercontent.com/u/59767992?v=4"
+                      alt=""
+                    />
+                    Eliseu Hairone
+                  </cite>
+                </blockquote>
+              </div>
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Possimus, aspernatur aliquam dolorum iste quas illum ipsa
+                    impedit
+                  </p>
+                  <cite>
+                    <img
+                      src="https://avatars.githubusercontent.com/u/46411490?v=4"
+                      alt="Foto de Alexandre"
+                    />
+                    Alexandre Amado
+                  </cite>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
     </main>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="/main.js"></script>
   </body>
 </html>
