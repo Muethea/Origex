@@ -356,7 +356,10 @@ nav.show div.icon-close {
 }
 
 /*===========TESTIMONIALS==================*/
-
+#testimonials .title{
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
 #testimonials {
   background: white;
 }
@@ -371,13 +374,14 @@ nav.show div.icon-close {
   text-indent: 1.9rem;
   margin-bottom: 1.5rem;
   color: var(--title-color);
+  
 }
 
 #testimonials blockquote p span {
   font: 700 3rem serif;
   position: absolute;
-  top: -0.6rem;
-  left: -1.8rem;
+  top: -0.5rem;
+  left: -1.875rem;
   color: var(--base-color);
 }
 
@@ -393,4 +397,13 @@ nav.show div.icon-close {
   object-fit: cover;
   clip-path: circle();
   margin-right: 0.5rem;
+}
+
+.swiper-slide{
+  height: auto;
+  padding: 4rem 1rem;
+}
+
+.swiper-pagination-bullet-active{
+  background: var(--base-color);
 }

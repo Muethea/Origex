@@ -32,3 +32,11 @@ window.addEventListener('scroll', function () {
 })
 
 /*SWIPER*/
+const swiper = new swiper('.swiper-container', {
+  slidesPerView:1,
+  pagination:{
+    el:'.swiper-pagination'
+  },
+  mousewell:true,
+  Keyboard:true
+})
