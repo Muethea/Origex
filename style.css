@@ -118,6 +118,7 @@ body {
 .section header strong {
   color: var(--base-color);
 }
+
 /*================LOGO==============*/
 .logo {
   color: var(--title-color);
@@ -356,7 +357,7 @@ nav.show div.icon-close {
 }
 
 /*===========TESTIMONIALS==================*/
-#testimonials .title{
+#testimonials .title {
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
 }
@@ -374,7 +375,6 @@ nav.show div.icon-close {
   text-indent: 1.9rem;
   margin-bottom: 1.5rem;
   color: var(--title-color);
-  
 }
 
 #testimonials blockquote p span {
@@ -399,11 +399,11 @@ nav.show div.icon-close {
   margin-right: 0.5rem;
 }
 
-.swiper-slide{
+.swiper-slide {
   height: auto;
   padding: 4rem 1rem;
 }
 
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
   background: var(--base-color);
 }

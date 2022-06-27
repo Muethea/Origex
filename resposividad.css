@@ -1,0 +1,505 @@
+@media (min-width: 1281px) {
+  .section {
+    padding: 10rem 0;
+  }
+  .container {
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
+
+  /*================LOGO==============*/
+  .logo {
+    color: var(--title-color);
+    font: 700 2.31rem 'Poppins', sans-serif;
+  }
+
+  /*================NAVEGATION==============*/
+
+  nav ul li a {
+    transition: color 0.2s;
+  }
+  nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: var(--base-color);
+    position: absolute;
+    left: 0;
+    bottom: -1.5rem;
+    transition: width 0.2s;
+  }
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+  nav .menu {
+    opacity: 1;
+    visibility: visible;
+    top: -20rem;
+    transition: 0.3s;
+  }
+  nav .menu ul {
+    display: flex;
+  }
+
+  nav.show .menu ul {
+    display: grid;
+  }
+  /*===========MOSTRAR MENU==========*/
+
+  nav.show ul.grid {
+    gap: 4rem;
+  }
+
+  nav .menu .title {
+    font: 700 1.5rem 'Poppins', sans-serif;
+  }
+  /*======== Toggle menu*/
+
+  nav .icon-menu {
+    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
+
+    position: absolute;
+    top: -1.5rem;
+    right: 1.5rem;
+    transition: 0.2s;
+  }
+
+  /*********************HOME*******************************/
+
+  .title {
+    font: 700 2.5rem 'Poppins', sans-serif;
+    color: var(--title-color);
+    --webkit-font-smoothing: auto;
+  }
+  #home p {
+    font: 700 1.125rem 'Poppins', sans-serif;
+  }
+
+  #home .button {
+    width: 14rem;
+  }
+  #home {
+    overflow: hidden;
+  }
+
+  #home .container {
+    margin: 0;
+  }
+
+  #home .image::before {
+    content: '';
+    height: 100%;
+    width: 37%;
+    background: var(--base-color-second);
+    position: absolute;
+    top: -16.8%;
+    left: 56.8%;
+
+    z-index: 0;
+  }
+
+  #home .image img {
+    width: 45rem;
+    position: relative;
+    left: 63rem;
+    right: 2.93rem;
+  }
+
+  #home .image img,
+  #home .image::before {
+    border-radius: 0.25rem;
+  }
+
+  #home .text {
+    top: 12rem;
+    left: 8rem;
+    width: 25rem;
+    position: absolute;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    text-align: left;
+  }
+
+  #home .text h1 {
+    margin-top: 1rem;
+  }
+
+  #home .text p {
+    margin-bottom: 2rem;
+    max-width: 100%;
+  }
+
+  /*About*/
+
+  #about .container {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+  }
+
+  #about .container {
+    margin: 0;
+  }
+
+  #about img {
+    width: 45rem;
+    position: relative;
+    left: 3rem;
+    right: 2.93rem;
+  }
+  #about .image::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: var(--base-color-second);
+    position: absolute;
+    top: -8.3%;
+    left: -33%;
+    z-index: 0;
+  }
+
+  #about .image img,
+  #about .image::before {
+    border-radius: 0.25rem;
+  }
+
+  #about .title {
+    font: 700 2.25rem 'Poppins', sans-serif;
+    color: var(--title-color);
+    --webkit-font-smoothing: auto;
+  }
+
+  #about .text {
+    position: absolute;
+    left: 60rem;
+    width: 48rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    text-align: left;
+  }
+
+  #about .text h1 {
+    margin-top: 1rem;
+  }
+
+  #about .text p {
+    margin-bottom: 2rem;
+    max-width: 100%;
+  }
+
+  .divider-2 {
+    height: 1px;
+    background: linear-gradient(
+      270deg,
+      hsla(var(--hue), 65%, 88%, 0.34%),
+      hsla(var(--hue), 36%, 57%, 1)
+    );
+  }
+
+  /*===========SERVICE==================*/
+  #services header {
+    text-align: center;
+  }
+  #services header p {
+    width: 30rem;
+    font-size: 1.125rem;
+    line-height: 1.44rem;
+    position: absolute;
+    left: 45rem;
+  }
+
+  .cards {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .cards.grid {
+    gap: 2rem;
+  }
+
+  .card {
+    width: 22rem;
+    padding: 3.625rem 2rem;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+    border-bottom: 0.25rem solid var(--base-color);
+    border-radius: 0.25rem 0.25rem 0 0;
+    text-align: center;
+  }
+
+  .card i {
+    display: block;
+    margin-bottom: 1.5rem;
+    font-size: 5rem;
+    color: var(--base-color);
+  }
+  .card .title {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  /*===========TESTIMONIALS==================*/
+
+  .testimonials {
+    display: flex;
+  }
+
+  .testimonial{
+    height: 17rem;
+  }
+  #testimonials .title {
+    position: relative;
+    left: 40rem;
+    text-align: center;
+    width: 30rem;
+    font-size: 2.25rem;
+    margin-bottom: 0.75rem;
+  }
+  #testimonials {
+    background: white;
+  }
+
+  #testimonials blockquote {
+    padding: 2rem;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 0.25rem;
+  }
+  #testimonials blockquote p {
+    position: relative;
+    text-indent: 1.9rem;
+    margin-bottom: 1.5rem;
+    color: var(--title-color);
+  }
+
+  #testimonials blockquote p span {
+    font: 700 3rem serif;
+    position: absolute;
+    top: -0.5rem;
+    left: -1.875rem;
+    color: var(--base-color);
+  }
+
+  #testimonials cite {
+    display: flex;
+    font-style: normal;
+    align-items: center;
+  }
+
+  #testimonials cite img {
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+    clip-path: circle();
+    margin-right: 0.5rem;
+  }
+
+  .swiper-slide {
+    height: auto;
+    padding: 4rem 1rem;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: var(--base-color);
+  }
+
+   /*===========Contact==================*/
+
+   #contact h2{
+    width: 25.25rem;
+   }
+   #contact p{
+    width: 22.75rem;
+   }
+
+   .contactWhat{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+
+   .contactWhat i{
+    margin-right:0.6rem ;
+    font-size: 1.5rem;
+   }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /*********************HOME*******************************/
+  home {
+    overflow: hidden;
+  }
+
+  #home {
+    display: flex;
+  }
+  #home .container {
+    margin: 0;
+  }
+
+  #home .image::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: var(--base-color-second);
+    position: absolute;
+    top: -16.8%;
+    left: 76.8%;
+    z-index: 0;
+  }
+
+  #home .image img {
+    position: relative;
+    left: 23rem;
+    right: 2.93rem;
+  }
+
+  #home .image img,
+  #home .image::before {
+    border-radius: 0.25rem;
+  }
+
+  #home .text {
+    width: 20rem;
+    position: absolute;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    text-align: left;
+  }
+
+  #home .text h1 {
+    margin-top: 1rem;
+  }
+
+  #home .text p {
+    margin-bottom: 2rem;
+    max-width: 100%;
+  }
+
+  body {
+    background: red;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  *********************HOME*******************************/ #home {
+    overflow: hidden;
+  }
+
+  #home {
+    display: flex;
+  }
+  #home .container {
+    margin: 0;
+  }
+
+  #home .image::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: var(--base-color-second);
+    position: absolute;
+    top: -16.8%;
+    left: 76.8%;
+    z-index: 0;
+  }
+
+  #home .image img {
+    position: relative;
+    left: 23rem;
+    right: 2.93rem;
+  }
+
+  #home .image img,
+  #home .image::before {
+    border-radius: 0.25rem;
+  }
+
+  #home .text {
+    width: 20rem;
+    position: absolute;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    text-align: left;
+  }
+
+  #home .text h1 {
+    margin-top: 1rem;
+  }
+
+  #home .text p {
+    margin-bottom: 2rem;
+    max-width: 100%;
+  }
+
+  /*About*/
+
+  #about {
+    background: white;
+  }
+
+  #about .container {
+    margin: 0;
+  }
+
+  #about .image {
+    position: absolute;
+  }
+
+  #about .image::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: var(--base-color-second);
+    position: absolute;
+    top: -8.3%;
+    left: -33%;
+    z-index: 0;
+  }
+
+  #about .image img {
+    position: relative;
+  }
+
+  #about .image img,
+  #about .image::before {
+    border-radius: 0.25rem;
+  }
+
+  #about .text {
+    position: relative;
+    left: 30rem;
+    width: 20rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    text-align: left;
+  }
+
+  #about .text h1 {
+    margin-top: 1rem;
+  }
+
+  #about .text p {
+    margin-bottom: 2rem;
+    max-width: 100%;
+  }
+
+  .divider-2 {
+    height: 1px;
+    background: linear-gradient(
+      270deg,
+      hsla(var(--hue), 65%, 88%, 0.34%),
+      hsla(var(--hue), 36%, 57%, 1)
+    );
+  }
+
+  body {
+    background: red;
+  }
+}
