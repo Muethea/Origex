@@ -407,3 +407,20 @@ nav.show div.icon-close {
 .swiper-pagination-bullet-active {
   background: var(--base-color);
 }
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 15rem;
+
+  color: white;
+  background: var(--base-color);
+}
+footer header {
+  display: flex;
+}
+
+footer .logo span {
+  color: white;
+}
