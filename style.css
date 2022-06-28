@@ -417,10 +417,24 @@ footer {
   color: white;
   background: var(--base-color);
 }
-footer header {
-  display: flex;
+footer a {
+  font-size: 1.32rem;
+}
+
+footer p {
+  margin-top: 1.5rem;
+  font: 400 1rem 'Poppins', sans-serif;
 }
 
 footer .logo span {
   color: white;
+}
+
+footer .socialmedia {
+  display: flex;
+}
+
+footer .socialmedia i {
+  margin-top: 2rem;
+  font-size: 2rem;
 }
