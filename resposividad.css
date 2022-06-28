@@ -1,4 +1,6 @@
 @media (min-width: 1281px) {
+  
+  
   .section {
     padding: 10rem 0;
   }
@@ -10,7 +12,7 @@
   /*================LOGO==============*/
   .logo {
     color: var(--title-color);
-    font: 700 2.31rem 'Poppins', sans-serif;
+    font: 700 1.8rem 'Poppins', sans-serif;
   }
 
   /*================NAVEGATION==============*/
@@ -51,7 +53,7 @@
   }
 
   nav .menu .title {
-    font: 700 1.5rem 'Poppins', sans-serif;
+    font: 700 1.4rem 'Poppins', sans-serif;
   }
   /*======== Toggle menu*/
 
@@ -69,7 +71,7 @@
   /*********************HOME*******************************/
 
   .title {
-    font: 700 2.5rem 'Poppins', sans-serif;
+    font: 700 2.25rem 'Poppins', sans-serif;
     color: var(--title-color);
     --webkit-font-smoothing: auto;
   }
@@ -211,9 +213,11 @@
   }
 
   .cards {
+    position: relative;
+    left: 18rem;
     margin-top: 4rem;
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
   }
 
   .cards.grid {
@@ -222,6 +226,7 @@
 
   .card {
     width: 22rem;
+    height: 30rem;
     padding: 3.625rem 2rem;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
     border-bottom: 0.25rem solid var(--base-color);
@@ -356,13 +361,67 @@
 ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* CSS */
+
+  nav ul li a {
+    transition: color 0.2s;
+  }
+  nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: var(--base-color);
+    position: absolute;
+    left: 0;
+    bottom: -1.5rem;
+    transition: width 0.2s;
+  }
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+  nav .menu {
+    opacity: 1;
+    visibility: visible;
+    top: -20rem;
+    transition: 0.3s;
+  }
+  nav .menu ul {
+    display: flex;
+  }
+
+  nav.show .menu ul {
+    display: grid;
+  }
+  /*===========MOSTRAR MENU==========*/
+
+  nav.show ul.grid {
+    gap: 4rem;
+  }
+
+  nav .menu .title {
+    font: 700 1rem 'Poppins', sans-serif;
+  }
+
+  /*======== Toggle menu*/
+
+  nav .icon-menu {
+    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
+
+    position: absolute;
+    top: -1.5rem;
+    right: 1.5rem;
+    transition: 0.2s;
+  }
+
   .section {
-    padding: 8rem 0;
+    padding: 10rem 0;
   }
   .container {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
 
   /*================LOGO==============*/
@@ -376,7 +435,7 @@
   /*********************HOME*******************************/
 
   .title {
-    font: 700 1.5rem 'Poppins', sans-serif;
+    font: 700 2.25rem 'Poppins', sans-serif;
     color: var(--title-color);
     --webkit-font-smoothing: auto;
   }
@@ -408,9 +467,9 @@
   }
 
   #home .image img {
-    width: 24rem;
+    width: 34rem;
     position: relative;
-    left: 25rem;
+    left: 32rem;
     right: 2.93rem;
   }
 
@@ -421,11 +480,10 @@
 
   #home .text {
     top: 12rem;
-
-    width: 22rem;
+    width: 24.75rem;
     position: absolute;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-left: 3rem;
+
     text-align: left;
   }
 
@@ -452,7 +510,7 @@
   }
 
   #about img {
-    width: 25rem;
+    width: 34rem;
     position: relative;
     left: 0.4rem;
     right: 2.93rem;
@@ -464,7 +522,7 @@
     background: var(--base-color-second);
     position: absolute;
     top: -8.3%;
-    left: -3%;
+    left: -15%;
     z-index: 0;
   }
   #about .text {
@@ -489,6 +547,8 @@
     text-align: center;
   }
   #services header p {
+    width: 34rem;
+    left: 18rem;
     font-size: 1.125rem;
     line-height: 1.44rem;
     position: absolute;
@@ -528,7 +588,7 @@
 
   .testimonials {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .testimonial {
@@ -536,8 +596,10 @@
     height: 17rem;
   }
   #testimonials .title {
+    width: 30.1rem;
     text-align: center;
-
+    position: relative;
+    left: 18rem;
     font-size: 2.25rem;
     margin-bottom: 0.75rem;
   }
@@ -604,11 +666,9 @@
   .contactWhat {
     display: inline-flex;
     justify-content: space-between;
-
   }
 
   .contactinfo {
-
     flex-direction: column;
   }
 
@@ -629,6 +689,5 @@
   .contactWhat a {
     margin-top: 3rem;
   }
-
-  
 }
+
